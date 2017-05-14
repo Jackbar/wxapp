@@ -1,0 +1,5 @@
+/* posts.wxss */
+.swiper-container,.swiper-container image{
+  width: 100%;
+  height: 600rpx;
+}
