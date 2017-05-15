@@ -1,5 +1,6 @@
 /* posts.wxss */
-.swiper-container,.swiper-container image{
+@import "post-item-tpl/post-item-tpl.wxss";
+.swiper-container, .swiper-container image {
   width: 100%;
   height: 600rpx;
 }

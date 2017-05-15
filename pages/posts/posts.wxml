@@ -1,5 +1,6 @@
 <!--posts.wxml-->
-<view class="classname">
+<import src="post-item-tpl/post-item-tpl.wxml" />
+<view class="container">
   <swiper indicator-dots autoplay circular class="swiper-container">
     <swiper-item>
       <image src="/images/wx.png"></image>
@@ -11,19 +12,10 @@
       <image src="/images/iqiyi.png"></image>
     </swiper-item>
   </swiper>
-  <view class="classname">
-    <view class="classname">
-      <image src="/images/avatar/1.png"></image>
-      <text>Sep 18 2016</text>
+  <block wx:for="{{postList}}">
+    <view bindtap="toDetail" data-postid="{{item.postId}}">
+      <template is="post-item" data="{{...item}}" />
     </view>
-    <text>正是虾肥蟹壮时</text>
-    <image src="/images/post/crab.png"></image>
-    <text>菊黄蟹正肥，品尝秋之味。徐志摩把,“看初花的荻芦”和“到楼外楼吃蟹”,并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，</text>
-    <view class="classname">
-      <image src="/images/icon/chat.png"></image>
-      <text>96</text>
-      <image src="/images/icon/view.png"></image>
-      <text>112</text>
-    </view>
-  </view>
+  </block>
+  
 </view>

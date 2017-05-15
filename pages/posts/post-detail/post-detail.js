@@ -1,5 +1,6 @@
-// posts.js
-import localdata from '../../mock/posts-data.js'
+// post-detail.js
+import localdata from '../../../mock/posts-data.js'
+
 Page({
 
   /**
@@ -13,9 +14,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(localdata)
+    console.log(options.id)
+    let postdata = localdata.postList[options.id]
+    console.log(postdata)
     this.setData({
-      postList: localdata.postList
+      postData: postdata
     })
   },
 
@@ -66,7 +69,7 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }, 
+  },
 
   /**
    * 页面上拉触底事件的处理函数
@@ -80,12 +83,5 @@ Page({
    */
   onPullDownRefresh: function () {
   
-  },
-
-  toDetail(event){
-    let id = event.currentTarget.dataset.postid
-    wx.navigateTo({
-      url: `post-detail/post-detail?id=${id}`,
-    })
   }
 })
