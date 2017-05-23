@@ -1,0 +1,8 @@
+<import src="../star/star.wxml" />
+<template name="movie">
+  <view class="classname">
+    <image src="/images/vr.png"></image>
+    <text>vr</text>
+    <template is="star"></template>
+  </view>
+</template>

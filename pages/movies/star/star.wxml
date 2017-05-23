@@ -1,0 +1,10 @@
+<!--star-tpl.wxml-->
+<template name="star">
+  <view class="classname">
+    <image src="/images/icon/star.png"></image>
+    <image src="/images/icon/star.png"></image>
+    <image src="/images/icon/star.png"></image>
+    <image src="/images/icon/star.png"></image>
+    <image src="/images/icon/star.png"></image>    
+  </view>
+</template>
