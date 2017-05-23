@@ -1,5 +1,5 @@
 <!--movies.wxml-->
-<import src="movie/movie.wxml" />
+<import src="movie-list/movie-list.wxml" />
 <view class="classname">
-  <template is="movie"></template>
+  <template is="movie-list"></template>
 </view>

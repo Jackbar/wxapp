@@ -1,1 +1,19 @@
 /* star-tpl.wxss */
+.star-container{
+  display: flex;
+  align-items: center;
+}
+
+.stars{
+  display: flex;
+  margin-right: 10px;
+}
+
+.stars image{
+  width: 17px;
+  height: 17px;
+  padding-left: 3px;
+}
+.star-score{
+  color: #333;
+}

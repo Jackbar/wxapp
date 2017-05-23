@@ -1,0 +1,7 @@
+<import src="../movie/movie.wxml" />
+<template name="movie-list">
+  <template is="movie"></template>
+  <template is="movie"></template>
+  <template is="movie"></template>
+  
+</template>
